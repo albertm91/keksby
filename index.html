@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="jquery-3.4.1.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        $(document).ready(function() {
+            $(".burger").click(function() {
+                $(".burger-item").toggleClass("active");
+            });
+            $(".burger").click(function() {
+                $(".toogle-menu").toggleClass("active");
+            });
+            $(".toogle-menu a").click(function() {
+                $(".toogle-menu").removeClass("active");
+            });
+            $(".toogle-menu a").click(function() {
+                $(".burger-item").removeClass("active");
+            });
+            $(".toogle-menu").click(function() {
+                $(".toogle-menu").removeClass("active");
+            });
+            $(".toogle-menu").click(function() {
+                $(".burger-item").removeClass("active");
+            });
+        });
+    </script>
+    <title>Keksby</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="wrapper">
+            <div class="header-top">
+                <img src="img/logo.png" alt="Логотип">
+                <nav class="menu">
+                    <ul>
+                        <li><a href="#">Магазин</a></li>
+                        <li><a href="#">Каталог</a></li>
+                        <li><a href="#">Отзывы</a></li>
+                    </ul>
+                </nav>
+
+
+                <a href="#" class="btn btn-order">Заказать</a>
+                <div class="menuToogle">
+                    <a href=# class="burger">
+                        <div class="burger-item"></div>
+                        <div class="burger-item"></div>
+                        <div class="burger-item"></div>
+
+                    </a>
+                </div>
+            </div>
+            <ul class="toogle-menu">
+                <li><a href="#">Магазин</a></li>
+                <li><a href="#">Каталог</a></li>
+                <li><a href="#">Отзывы</a></li>
+                <li><a href="#">Заказать</a></li>
+            </ul>
+            <h1>Аксессуары для котов<br>
+                Коллекция FW15</h1>
+        </div>
+    </header>
+    <div class="advantages">
+        <div class="wrapper">
+            <section class="adv-item adv-item1">
+                <div class="adv-icon adv-icon1"></div>
+                <h3>Выбор</h3>
+                <p>Ваш питомец оценит широту нашего ассортимента аксессуаров.</p>
+            </section>
+            <section class="adv-item adv-item2">
+                <div class="adv-icon adv-icon2"></div>
+                <h3>Качество</h3>
+                <p>Наши товары не сломаются на
+                    второй день. Только на третий.</p>
+            </section>
+            <section class="adv-item adv-item3">
+                <div class="adv-icon adv-icon3"></div>
+                <h3>Безопасность</h3>
+                <p>Все изготовлено из натуральных материалов, безопасных для котов.</p>
+            </section>
+        </div>
+    </div>
+    <div class="theory">
+        <div class="wrapper">
+            <div class="theory-header">
+                <h2>Немного теории</h2>
+                <a href="#" class="btn btn-info">Справочник</a>
+            </div>
+            <div class="theory-item theory-item1">
+                <img src="img/theory-img.png" class="theory-img" alt="котик">
+                <dl>
+                    <dt>Окрас кошек и котов <span>источник:</span> <a href="#">wikipedia</a></dt>
+
+                    <dd>Окрас шерсти, кожи и глаз кошки обусловлен присутствием в них пигмента меланина. Меланин находится в теле волоса в виде микроскопических гранул, которые различаются по форме, размеру и количеству, что и вызывает различия в окрасе.</dd>
+                </dl>
+            </div>
+            <div class="theory-item theory-item2">
+                <img src="img/theory-img2.png" class="theory-img2" alt="котик">
+                <dl>
+                    <dt>Кошкин дом <span>источник:</span> <a href="#">kotmurr.spb.ru</a></dt>
+
+                    <dd>Нужен ли кошке Кошкин дом? Свой отдельный, обособленный от пространства городской квартиры Кошкин дом? Да, нужен! Нужен особый Кошкин дом, обустроенный по ее вкусу с лесенкой, с когтеточкой, с замкнутым, своим, отдельным уголком в ее, кошкином, доме.</dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+    <div class="reviews">
+        <div class="wrapper">
+            <div class="reviews-header">
+                <h2>Довольные коты</h2>
+                <a href="#" class="btn btn-info">Все отзывы</a>
+            </div>
+            <div class="blockquotes">
+                <blockquote class="review review1">
+                    <p>Спасибо Кексу за давно напрашивающуюся идею! Набрал себе очков на все случаи жизни: для чтения и для вечеринки с котанами B-)</p>
+                    <cite>Барсик, г. Москва</cite>
+                </blockquote>
+                <blockquote class="review review2">
+                    <p>Я просто не могу без шоппинга и теперь не нужно тащить хозяйку в магазин, заказываю все аксессуары на сайте у Кекса он-лайн!</p>
+                    <cite>Мурка, г. Санкт-Петербург</cite>
+                </blockquote>
+
+            </div>
+        </div>
+    </div>
+    <div class="popular-items">
+        <div class="wrapper">
+            <div class="pop-header">
+                <h2>Популярные товары</h2>
+                <a href="" class="btn btn-info">Каталог</a>
+            </div>
+            <div class="pop-items">
+                <div class="pop-item pop-item1">
+                    <p>Очки «Классика жанра»</p><span>300 р.</span>
+                    <a href="#" class="btn btn-small btn1">Описание</a>
+                    <a href="#" class="btn btn-small btn2">Купить</a>
+                </div>
+                <div class="pop-item pop-item2">
+                    <p>Очки «Жалюзи»</p><span>400 р.</span>
+                    <a href="#" class="btn btn-small btn1">Описание</a>
+                    <a href="#" class="btn btn-small btn2">Купить</a>
+                </div>
+                <div class="pop-item pop-item3">
+                    <p>Очки «Базилио»</p><span>500 р.</span>
+                    <a href="#" class="btn btn-small btn1">Описание</a>
+                    <a href="#" class="btn btn-small btn2">Купить</a>
+                </div>
+            </div>
+            <div class="price-header">
+                <h2>Прайс-лист на услуги</h2>
+            </div>
+            <table class="price-table">
+                <colgroup>
+                    <col class="col1">
+                    <col class="col2">
+                    <col class="col3">
+                    <col class="col4">
+                </colgroup>
+                <tr>
+                    <th>№</th>
+                    <th>Название услуги</th>
+                    <th>Кто оказывает</th>
+                    <th>Сколько стоит</th>
+                </tr>
+                <tr>
+                    <td>1.</td>
+                    <td class="service">Стрижка</td>
+                    <td>Грумер</td>
+                    <td>500 руб.</td>
+                </tr>
+                <tr>
+                    <td>2.</td>
+                    <td class="service">Заточка когтей</td>
+                    <td>Грумер</td>
+                    <td>300 руб.</td>
+                </tr>
+                <tr>
+                    <td>3.</td>
+                    <td class="service">Накрутка усов</td>
+                    <td>Грумер</td>
+                    <td>100 руб.</td>
+                </tr>
+                <tr>
+                    <td>4.</td>
+                    <td class="service">Подбор аксессуаров</td>
+                    <td>Стилист</td>
+                    <td>1500 руб.</td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+    <div class="feedback">
+        <div class="wrapper">
+            <div class="feedback-header">
+                <h2>Остались вопросы?</h2>
+                <span>Свяжитесь с нами, и мы развеем оставшиеся у вас сомнения!</span>
+            </div>
+            <img src="img/send-img.png" class="send-img" alt="Котяра">
+            <div class="feedback-form">
+
+                <label for="name">Представьтесь, пожалуйста:</label>
+                <input type="text" value="Имя «Прозвище» Фамилия" id="name">
+                <div class="phoneandemail">
+                    <div class="phone">
+                        <label for="phone">Контактный телефон:</label>
+                        <input type="text" value="8 (ХХХ) ХХХ-ХХ-ХХ" id="phone">
+                    </div>
+                    <div class="email">
+                        <label for="email">Электронная почта:</label>
+                        <input type="text" value="E-mail" id="email">
+                    </div>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" id="checkbox" checked><label for="checkbox">Я согласен получать спам и смс на телефон</label>
+                </div>
+                <div class="theme">
+                    <label for="select">Тема обращения:</label>
+                    <select id="select">
+                        <option>Условия доставки</option>
+                        <option>Условия недоставки</option>
+                    </select>
+                </div>
+                <div class="text">
+                    <label for="textarea">Текст обращения:</label>
+                    <textarea id="textarea">Введите текст вашего обращения</textarea>
+                </div>
+                <input class="btn" type="submit" value="Отправить">
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="wrapper">
+            <div class="footer-header">
+                <img src="img/logo.png" alt="Кексби">
+                <a href="#" class="btn btn-order">Заказать</a>
+            </div>
+            <div class="footer-links">
+                <div class="links-list shop">
+                    <h3>Магазин</h3>
+                    <a href="#">Домики</a>
+                    <a href="#">Одежда</a>
+                    <a href="#">Очки</a>
+                </div>
+                <div class="links-list reviews-links">
+                    <h3>Отзывы</h3>
+                    <a href="#">Показать</a>
+                    <a href="#">Оставить</a>
+
+                </div>
+                <div class="links-list price-links">
+                    <h3>Прайс-лист</h3>
+                    <a href="#">Скачать прайс</a>
+
+                </div>
+            </div>
+            <div class="footer-social">
+                <h3>Давайте дружить!</h3>
+                <div class="social-panel">
+                    <a href="#" class="vk"></a>
+                    <a href="#" class="fb"></a>
+                    <a href="#" class="insta"></a>
+                </div>
+                <div class="with-love">
+                    С <span class="heart">любовью</span> для <a href="#">html academy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body></html>
